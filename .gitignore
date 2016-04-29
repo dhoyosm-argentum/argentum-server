@@ -14,6 +14,15 @@
 .idea
 .project
 .strong-pm
+.grunt
+.lock-wscript
+.npm
+.node_repl_history
 coverage
+jscoverage/JSCover
+lib-cov
+logs
+pids
 node_modules
 npm-debug.log
+build/Release
