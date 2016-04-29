@@ -26,3 +26,4 @@ pids
 node_modules
 npm-debug.log
 build/Release
+launchConfigurations/
