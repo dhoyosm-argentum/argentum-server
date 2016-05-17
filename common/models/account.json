@@ -1,19 +1,27 @@
 {
-    "name": "Client",
-    "base": "User",
+    "name": "Account",
+    "base": "PersistedModel",
     "strict": false,
     "idInjection": false,
     "options": {
         "validateUpsert": true
     },
     "properties": {
-        "lastName": {
+        "id": {
+            "type": "number",
+            "id": true,
+            "required": true
+        },
+        "name": {
             "type": "string",
             "required": true
         },
-        "firstName": {
+        "type": {
             "type": "string",
             "required": true
+        },
+        "notes": {
+            "type": "string"
         }
     },
     "mixins": {
@@ -21,11 +29,6 @@
     },
     "validations": [],
     "relations": {},
-    "acls": [{
-        "accessType": "*",
-        "principalType": "ROLE",
-        "principalId": "admin",
-        "permission": "ALLOW"
-    }],
+    "acls": [],
     "methods": {}
 }
