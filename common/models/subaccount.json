@@ -1,5 +1,5 @@
 {
-  "name": "Account",
+  "name": "Subaccount",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -17,24 +17,22 @@
       "type": "number",
       "default": 0
     },
+    "goalValue": {
+      "type": "number",
+      "default": 0
+    },
+    "goalDate": {
+      "type": "date"
+    },
     "notes": {
       "type": "string"
-    },
-    "type": {
-      "type": "string",
-      "required": true
     }
   },
   "validations": [],
   "relations": {
-    "client": {
+    "account": {
       "type": "belongsTo",
-      "model": "Client",
-      "foreignKey": "clientId"
-    },
-    "subaccount": {
-      "type": "hasMany",
-      "model": "Subaccount",
+      "model": "Account",
       "foreignKey": ""
     }
   },

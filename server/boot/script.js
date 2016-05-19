@@ -3,13 +3,16 @@ module.exports = function(app) {
     var Client = app.models.Client;
 
     Client.create([{
-        username: 'admin@admin.com',
         email: 'admin@admin.com',
         firstName: 'Admin',
         lastName: 'Admin',
         password: '123456'
     }, {
-        username: 'dhoyosm@gmail.com',
+        email: 'test@email.com',
+        firstName: 'Test',
+        lastName: 'Test',
+        password: '123456'
+    }, {
         email: 'dhoyosm@gmail.com',
         firstName: 'Daniel',
         lastName: 'Hoyos',
@@ -33,7 +36,7 @@ module.exports = function(app) {
             });
         });
     });
-*/
+//*/
     /*
         var MongoDB = app.dataSources.MongoDB;
 

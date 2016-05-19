@@ -1,31 +1,45 @@
 {
-    "name": "Client",
-    "base": "User",
-    "strict": false,
-    "idInjection": false,
-    "options": {
-        "validateUpsert": true
+  "name": "Client",
+  "base": "User",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "properties": {
+    "lastName": {
+      "type": "string",
+      "required": true
     },
-    "properties": {
-        "lastName": {
-            "type": "string",
-            "required": true
-        },
-        "firstName": {
-            "type": "string",
-            "required": true
-        }
+    "firstName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "accounts": {
+      "type": "hasMany",
+      "model": "Account",
+      "foreignKey": "clientId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
     },
-    "mixins": {
-        "TimeStamp": true
-    },
-    "validations": [],
-    "relations": {},
-    "acls": [{
-        "accessType": "*",
-        "principalType": "ROLE",
-        "principalId": "admin",
-        "permission": "ALLOW"
-    }],
-    "methods": {}
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
 }
