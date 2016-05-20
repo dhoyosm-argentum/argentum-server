@@ -32,10 +32,15 @@
       "model": "Client",
       "foreignKey": "clientId"
     },
-    "subaccount": {
+    "subaccounts": {
       "type": "hasMany",
       "model": "Subaccount",
-      "foreignKey": ""
+      "foreignKey": "accountId"
+    },
+    "transactions": {
+      "type": "hasMany",
+      "model": "Transaction",
+      "foreignKey": "accountId"
     }
   },
   "acls": [

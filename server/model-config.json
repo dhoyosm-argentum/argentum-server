@@ -50,5 +50,17 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "Transaction": {
+    "dataSource": "MongoDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Subtransaction": {
+    "dataSource": "MongoDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }
