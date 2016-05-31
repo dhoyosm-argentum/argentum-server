@@ -1,0 +1,25 @@
+{
+  "name": "TransactionComposer",
+  "base": "",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "transaction": {
+      "type": "Transaction",
+      "required": true
+    },
+    "distribution": {
+      "type": [
+        "TransactionDistribution"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

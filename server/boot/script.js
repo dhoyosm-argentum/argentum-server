@@ -1,15 +1,13 @@
 module.exports = function(app) {
-    //*
+    /*
     var Client = app.models.Client;
 
     Client.create([{
-        id: '0',
         email: 'admin@admin.com',
         firstName: 'Admin',
         lastName: 'Admin',
         password: '123456'
     }, {
-        id: '1',
         email: 'test@email.com',
         firstName: 'Test',
         lastName: 'Test',

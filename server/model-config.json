@@ -62,5 +62,17 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "TransactionDistribution": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "TransactionComposer": {
+    "dataSource": null,
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

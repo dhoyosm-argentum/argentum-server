@@ -1,0 +1,26 @@
+{
+  "name": "TransactionDistribution",
+  "base": "",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "subaccountName": {
+      "type": "string"
+    },
+    "percentage": {
+      "type": "number",
+      "required": true
+    },
+    "subaccountId": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

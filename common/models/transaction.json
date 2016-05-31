@@ -24,10 +24,6 @@
     "amount": {
       "type": "number",
       "required": true
-    },
-    "distribution": {
-      "type": "string",
-      "required": true
     }
   },
   "validations": [],
