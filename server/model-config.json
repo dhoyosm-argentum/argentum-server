@@ -64,13 +64,13 @@
     "$resolved": true
   },
   "TransactionDistribution": {
-    "dataSource": "db",
+    "dataSource": null,
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "TransactionComposer": {
-    "dataSource": null,
+    "dataSource": "db",
     "public": true,
     "$promise": {},
     "$resolved": true

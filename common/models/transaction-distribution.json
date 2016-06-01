@@ -7,15 +7,16 @@
     "validateUpsert": true
   },
   "properties": {
-    "subaccountName": {
-      "type": "string"
-    },
-    "percentage": {
-      "type": "number",
+    "subaccounts": {
+      "type": [
+        "Subaccount"
+      ],
       "required": true
     },
-    "subaccountId": {
-      "type": "string",
+    "subtransactions": {
+      "type": [
+        "Subtransaction"
+      ],
       "required": true
     }
   },
