@@ -68,6 +68,16 @@
       "principalType": "ROLE",
       "principalId": "$owner",
       "permission": "ALLOW"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$owner",
+        "permission": "ALLOW",
+        "property": "__get__transaction"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$owner",
+        "permission": "ALLOW",
+        "property": "__get__subaccount"
     }
   ],
   "methods": {}
