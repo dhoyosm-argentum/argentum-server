@@ -6,17 +6,12 @@ module.exports = function(app) {
         email: 'admin@admin.com',
         firstName: 'Admin',
         lastName: 'Admin',
-        password: '123456'
+        password: '9QmKmX8FE6iV3b2'
     }, {
-        email: 'test@email.com',
-        firstName: 'Test',
-        lastName: 'Test',
-        password: '123456'
-    }, {
-        email: 'dhoyosm@gmail.com',
-        firstName: 'Daniel',
-        lastName: 'Hoyos',
-        password: '123456'
+        email: 'demo@email.com',
+        firstName: 'Demo User',
+        lastName: 'Demo User',
+        password: 'demo'
     }], function(err, clients) {
         if (err) throw (err);
         // Create the admin role
